@@ -2,8 +2,8 @@
   "name": "fire-text",
   "author": "Firecrafter28",
   "scripts": {
-    "dev": "tsc --watch",
-    "build": "tsc"
+    "dev": "conc 'tsc --watch' 'sass src/scss:dist/css --watch'",
+    "build": "conc 'tsc' 'sass src/scss:dist/css'"
   },
   "type": "module",
   "devDependencies": {

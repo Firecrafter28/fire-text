@@ -1,1 +1,8 @@
+# Node modules
 node_modules/
+
+# Compiled files
+dist/**/*.css
+dist/**/*.ts
+dist/**/*.map
+dist/**/*.js
