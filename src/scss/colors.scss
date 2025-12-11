@@ -1,0 +1,14 @@
+:root {
+    --bg--dark: #202020;
+    --bg-raised--dark: #101010;
+    --bg-raised__hover--dark: #505050;
+    --fg--dark: #f0f0f0;
+}
+
+// Dark theme
+body, body.dark {
+    --bg: var(--bg--dark);
+    --bg-raised: var(--bg-raised--dark);
+    --bg-raised__hover: var(--bg-raised__hover--dark);
+    --fg: var(--fg--dark);
+}

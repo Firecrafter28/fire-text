@@ -1,5 +1,6 @@
 @use "toolbar";
+@use "colors";
 
 body {
-    background: #202020;
+    background: var(--bg);
 }

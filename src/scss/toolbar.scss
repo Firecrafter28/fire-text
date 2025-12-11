@@ -1,9 +1,11 @@
+@use "colors";
+
 $toolbar-height: 30px;
 $toolbar-item-width: 80px;
 $toolbar-context-menu-margin: 5px;
 
 #toolbar {
-    background: #101010;
+    background: var(--bg-raised);
     position: fixed;
     inset: 0;
     height: $toolbar-height;
@@ -13,7 +15,7 @@ $toolbar-context-menu-margin: 5px;
 
 
 .toolbar-item {
-    color: #f0f0f0;
+    color: var(--fg);
     font-family: sans-serif;
     cursor: pointer;
     -webkit-user-select: none;
@@ -26,11 +28,11 @@ $toolbar-context-menu-margin: 5px;
     align-items: center;
     transition: all 0.2s ease;
 
-    background: #101010;
+    background: var(--bg-raised);
     border: none;
 
     &:hover {
-        background: #505050;
+        background: var(--bg-raised__hover);
     }
 
     &:focus-within > .toolbar-item-context-menu,
@@ -64,12 +66,13 @@ $toolbar-context-menu-margin: 5px;
 .toolbar-action {
     width: $toolbar-item-width;
     height: $toolbar-height;
-    background: #101010;
-    color: #f0f0f0;
+    background: var(--bg-raised);
+    color: var(--fg);
     border: none;
     transition: all 0.2s ease;
+    cursor: pointer;
 
     &:hover {
-        background: #505050;
+        background: var(--bg-raised__hover);
     }
 }
